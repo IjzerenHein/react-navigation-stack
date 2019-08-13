@@ -3,6 +3,7 @@ import { Button, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { Themed } from '@react-navigation/native';
 
 function Menu({ navigation }) {
   return (
@@ -20,9 +21,9 @@ class Fake extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontSize: 20 }}>
+        <Themed.Text style={{ fontSize: 20 }}>
           {this.props.navigation.getParam('title')}
-        </Text>
+        </Themed.Text>
       </View>
     );
   }
