@@ -703,17 +703,20 @@ class Header extends React.PureComponent<Props, State> {
       horizontal: 'always',
     };
 
+    let backgroundColor = safeHeaderStyle.backgroundColor;
+
+    if (!backgroundColor) {
+      backgroundColor = isDark
+        ? ThemeColors.dark.header
+        : ThemeColors.light.header;
+    }
+
     return (
       <Animated.View
         style={[
           this.props.layoutInterpolator(this.props),
           Platform.OS === 'ios' && !options.headerTransparent
-            ? {
-                backgroundColor:
-                  safeHeaderStyle.backgroundColor || isDark
-                    ? ThemeColors.dark.header
-                    : ThemeColors.light.header,
-              }
+            ? { backgroundColor }
             : null,
         ]}
       >

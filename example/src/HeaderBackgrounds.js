@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Themed } from '@react-navigation/native';
 
@@ -15,6 +15,7 @@ function createHeaderBackgroundExample(options = {}) {
             >
               Login Screen
             </Themed.Text>
+            <StatusBar barStyle="light-content" />
           </View>
         ),
         navigationOptions: {
@@ -34,6 +35,7 @@ function createHeaderBackgroundExample(options = {}) {
             >
               Games Screen
             </Themed.Text>
+            <StatusBar barStyle="light-content" />
           </View>
         ),
         navigationOptions: {
@@ -47,9 +49,13 @@ function createHeaderBackgroundExample(options = {}) {
       Main: {
         screen: ({ navigation }) => (
           <View style={styles.container}>
-            <Themed.Text style={styles.tips} onPress={() => navigation.navigate('My')}>
+            <Themed.Text
+              style={styles.tips}
+              onPress={() => navigation.navigate('My')}
+            >
               Main Screen
             </Themed.Text>
+            <StatusBar barStyle="light-content" />
           </View>
         ),
         navigationOptions: {
@@ -65,6 +71,7 @@ function createHeaderBackgroundExample(options = {}) {
             >
               My Screen
             </Themed.Text>
+            <StatusBar barStyle="light-content" />
           </View>
         ),
         navigationOptions: {
@@ -77,6 +84,7 @@ function createHeaderBackgroundExample(options = {}) {
             <Themed.Text style={styles.tips} onPress={() => {}}>
               News Screen
             </Themed.Text>
+            <StatusBar barStyle="light-content" />
           </View>
         ),
         navigationOptions: {

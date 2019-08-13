@@ -17,7 +17,6 @@ import {
   NavigationActions,
   NavigationProvider,
   ThemeContext,
-  ThemeColors,
 } from '@react-navigation/core';
 
 import { withOrientation } from '@react-navigation/native';
@@ -385,6 +384,7 @@ class StackViewLayout extends React.Component<Props, State> {
         <Animated.View
           style={[
             styles.container,
+            this.transitionConfig!.containerStyle,
             this.context === 'light'
               ? this.transitionConfig!.containerStyleLight
               : this.transitionConfig!.containerStyleDark,

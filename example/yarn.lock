@@ -836,6 +836,13 @@
     hoist-non-react-statics "^2.5.0"
     prop-types "^15.6.0"
 
+"@expo/vector-icons@^10.0.0":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.0.4.tgz#61f8a41ef72d17c58e9175b864b02aec3b2b80b1"
+  integrity sha512-IZ9eM9CoSl2m+FtYJe/o+XFEAk6kq8YSjcxLsjDQImTz2IAfOx9QdT+Kwm0lBVBOqXdSZ/wi9gUFe7Fp9XuoTg==
+  dependencies:
+    lodash "^4.17.4"
+
 "@expo/vector-icons@^10.0.1":
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.0.1.tgz#dbb0a9ab68b53aa6cbbc04b48421e4db862535d9"
@@ -899,10 +906,10 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-2.0.10.tgz#d28a446352e75754b78509557988359133cdbcca"
   integrity sha512-NrIzyLe0eSbhgMnHl2QdSEhaA7yXh6p9jzMomfUa//hoTXE+xbObGDdiWWSQm2bnXnZJg8XCU3AB9qzvqcuLnA==
 
-"@react-navigation/core@3.5.0-alpha.4":
-  version "3.5.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.0-alpha.4.tgz#7608d10ca18bc4be62ef52a7bff9fcae0b8b8a3e"
-  integrity sha512-5X6BeUqvIkF3JnTVVJaD9ShXWNQDQ799T9JZPH2FA2hvzQiAmKA25SZLoe1pBg+neUJOKyrZmvsNtUPZfo+Apw==
+"@react-navigation/core@3.5.0-alpha.7":
+  version "3.5.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.0-alpha.7.tgz#97fa67bff84e6398b15b857045b6f0b6614cd65a"
+  integrity sha512-mVq9eaNLb+cuytrgdaNHaG4t7Nrgc7G1uPB7rBhNDQqzy5XWvhdJnK6D5yi3mv1z9AvB2I556ffKHWM9TSf09g==
   dependencies:
     hoist-non-react-statics "^3.3.0"
     path-to-regexp "^1.7.0"

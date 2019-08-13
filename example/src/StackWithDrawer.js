@@ -1,13 +1,16 @@
 import * as React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Button, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { useTheme, ThemeColors } from '@react-navigation/core';
 import { Themed } from '@react-navigation/native';
 
 function Menu({ navigation }) {
+  let theme = useTheme();
+
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: ThemeColors[theme].bodyContent }}>
       <Button title="Open on top" onPress={() => navigation.navigate('Top')} />
     </View>
   );

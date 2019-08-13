@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, Button, Easing, View, Text } from 'react-native';
+import { Animated, Button, Easing, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Themed } from '@react-navigation/native';
 import { ThemeContext, ThemeColors } from '@react-navigation/core';

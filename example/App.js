@@ -5,7 +5,6 @@ import {
   I18nManager,
   StatusBar,
   View,
-  Text,
   TouchableOpacity,
 } from 'react-native';
 import {
@@ -19,6 +18,7 @@ import {
   createStackNavigator,
 } from 'react-navigation-stack';
 import { List, Divider } from 'react-native-paper';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import FullScreen from './src/FullScreen';
 import SimpleStack from './src/SimpleStack';
@@ -169,15 +169,15 @@ const Root = createStackNavigator(
 );
 
 useScreens();
-useScreens();
 let AppContainer = createAppContainer(Root);
+
 export default () => {
   let [theme, setTheme] = React.useState('light');
 
   return (
     <View style={{ flex: 1 }}>
       <AppContainer theme={theme} />
-      <View style={{ position: 'absolute', bottom: 30, right: 30 }}>
+      <View style={{ position: 'absolute', bottom: 60, right: 20 }}>
         <TouchableOpacity
           onPress={() => {
             setTheme(theme === 'light' ? 'dark' : 'light');
@@ -186,16 +186,29 @@ export default () => {
           <View
             style={{
               backgroundColor: ThemeColors[theme].bodyContent,
-              borderRadius: 10,
-              padding: 5,
+              borderRadius: 25,
+              width: 50,
+              height: 50,
+              alignItems: 'center',
+              justifyContent: 'center',
               borderColor: ThemeColors[theme].bodyBorder,
-              paddingHorizontal: 15,
               borderWidth: 1,
+              shadowColor: ThemeColors[theme].label,
+              shadowOffset: {
+                width: 0,
+                height: 2,
+              },
+              shadowOpacity: 0.4,
+              shadowRadius: 2,
+
+              elevation: 5,
             }}
           >
-            <Text style={{ fontSize: 15, color: ThemeColors[theme].label }}>
-              Toggle theme
-            </Text>
+            <MaterialCommunityIcons
+              name="theme-light-dark"
+              size={30}
+              color={ThemeColors[theme].label}
+            />
           </View>
         </TouchableOpacity>
       </View>

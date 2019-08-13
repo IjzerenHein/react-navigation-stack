@@ -1,10 +1,6 @@
 import * as React from 'react';
-import { Dimensions, StatusBar, Button, View, Text } from 'react-native';
-import {
-  ThemeContext,
-  ThemeColors,
-  withNavigation,
-} from '@react-navigation/core';
+import { Dimensions, Button, View } from 'react-native';
+import { withNavigation } from '@react-navigation/core';
 import { Themed } from '@react-navigation/native';
 import { createStackNavigator } from 'react-navigation-stack';
 

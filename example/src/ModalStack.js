@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Themed } from '@react-navigation/native';
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Themed, createAppContainer } from '@react-navigation/native';
 
@@ -14,15 +14,21 @@ class ScreenOne extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Themed.Text style={styles.welcome}>Welcome to React Native!</Themed.Text>
-        <Themed.Text style={styles.instructions}>Here is Screen One!</Themed.Text>
+        <Themed.Text style={styles.welcome}>
+          Welcome to React Native!
+        </Themed.Text>
+        <Themed.Text style={styles.instructions}>
+          Here is Screen One!
+        </Themed.Text>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.props.navigation.navigate('Screen2');
           }}
         >
-          <Themed.Text style={{ color: 'white', fontSize: 24 }}>Press me!</Themed.Text>
+          <Themed.Text style={{ color: 'white', fontSize: 24 }}>
+            Press me!
+          </Themed.Text>
         </TouchableOpacity>
       </View>
     );
@@ -33,15 +39,21 @@ class ScreenTwo extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Themed.Text style={styles.welcome}>Welcome to React Native!</Themed.Text>
-        <Themed.Text style={styles.instructions}>Here is Screen Two!</Themed.Text>
+        <Themed.Text style={styles.welcome}>
+          Welcome to React Native!
+        </Themed.Text>
+        <Themed.Text style={styles.instructions}>
+          Here is Screen Two!
+        </Themed.Text>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.props.navigation.navigate('Screen3');
           }}
         >
-          <Themed.Text style={{ color: 'white', fontSize: 24 }}>Press me!</Themed.Text>
+          <Themed.Text style={{ color: 'white', fontSize: 24 }}>
+            Press me!
+          </Themed.Text>
         </TouchableOpacity>
       </View>
     );
@@ -52,8 +64,12 @@ class ScreenThree extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Themed.Text style={styles.welcome}>Welcome to React Native!</Themed.Text>
-        <Themed.Text style={styles.instructions}>Here is Screen Three!</Themed.Text>
+        <Themed.Text style={styles.welcome}>
+          Welcome to React Native!
+        </Themed.Text>
+        <Themed.Text style={styles.instructions}>
+          Here is Screen Three!
+        </Themed.Text>
       </View>
     );
   }
