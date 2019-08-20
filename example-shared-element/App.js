@@ -29,6 +29,7 @@ import {
   HeaderBackgroundDefault,
   HeaderBackgroundFade,
 } from './src/HeaderBackgrounds';
+import SharedElementStack from './src/SharedElementStack';
 
 // Comment the following two lines to stop using react-native-screens
 import { useScreens } from 'react-native-screens';
@@ -40,7 +41,13 @@ useScreens(true);
 I18nManager.forceRTL(false);
 
 const data = [
-  { component: SimpleStack, title: 'Simple', routeName: 'SimpleStack' },
+  {
+    component: SharedElementStack,
+    title: 'Shared Element',
+    routeName: 'SharedElementStack',
+  },
+
+  /*{ component: SimpleStack, title: 'Simple', routeName: 'SimpleStack' },
   { component: HeaderPreset, title: 'UIKit Preset', routeName: 'UIKit' },
   { component: RevealStack, title: 'Reveal Preset', routeName: 'Reveal' },
   { component: ImageStack, title: 'Image', routeName: 'ImageStack' },
@@ -90,7 +97,7 @@ const data = [
     component: HeaderBackgroundFade,
     title: 'Header background (fade transition)',
     routeName: 'HeaderBackgroundFade',
-  },
+  },*/
 ];
 
 // Cache images
@@ -150,7 +157,7 @@ const Root = createStackNavigator(
     }, {}),
   },
   {
-    mode: 'modal',
+    //mode: 'modal',
     headerMode: 'none',
   }
 );
